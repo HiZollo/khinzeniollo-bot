@@ -4,6 +4,8 @@ const sleep = (ms) => new Promise(res => setTimeout(res, ms))
 
 module.exports = {
   async execute(interaction, client) {
+    const levelId = interaction.customId.slice(6) // level_
+
     if (!client.energy.useEnergy()) {
       return interaction.reply({
         content: "噢不，你沒有體力了，所以無法挑戰。\n你可以使用 /stats 指令查看下次回復是什麼時候",
@@ -13,7 +15,6 @@ module.exports = {
     
     await interaction.deferUpdate()
 
-    const levelId = interaction.customId.slice(6) // level_
     await interaction.channel.send(`${interaction.user}，聽說你要挑戰${levelTranslate.zh[levelId]}，祝你好運`)
     
     await sleep(1000)
