@@ -1,0 +1,59 @@
+{
+  "1": [],
+  "2": [{
+    "type": "problem",
+    "question": "誰是這篇故事的主角，貫穿頭尾？",
+    "answers": ["ZOLLVS", "Zollus"]
+  }, {
+    "type": "problemset",
+    "problems": [{
+      "type": "problem",
+      "question": "Zollus 在哪一天（幾月幾日）出生？",
+      "answers": ["03/15", "3/15", "IDVSMARTIAE"]
+    }, {
+      "type": "problem",
+      "question": "文本提到 Zollus 出生的那天也是一位大人物的殞落，請問是誰？",
+      "answers": ["Julius Caesar", "Gaius Julius Caesar"]
+    }]
+  }, {
+    "type": "problem",
+    "question": "Zollus 所在國家的名稱是？",
+    "answers": ["Ignatia", "IGNATIA"]
+  }, {
+    "type": "problemset",
+    "problems": [{
+      "type": "problem",
+      "question": "另外一個國家的名稱是什麼？",
+      "answers": ["Tenarius", "TENARIVS"]
+    }, {
+      "type": "problem",
+      "question": "誰統治 Ignatia？",
+      "answers": ["Lucius", "LVCIVS"]
+    }]
+  }, {
+    "type": "problem",
+    "question": "誰統治 Tenarius？",
+    "answers": ["Aurelius", "AVRELIVS"]
+  }, {
+    "type": "problem",
+    "question": "國王答應要給 Zollus 獎賞時，Zollus 不悅並說了一句話，請問那句話引用自哪一本古羅馬書籍？",
+    "answers": ["History of Rome (Livy)", "Ab Urbe Condita", "Ab urbe condita libri", "自建城以來"]
+  }],
+  "3": [],
+  "4": [],
+  "5": [{
+    "type": "problem",
+    "question": "請問 n 是多少？",
+    "answers": ["973669971969907139985091523"]
+  }],
+  "E1": [{
+    "type": "problem", 
+    "question": "請回答網頁中 Bonus I 關卡的問題：¿Cuál es?", 
+    "answers": ["quinquenio"] 
+  }],
+  "E2": [{ 
+    "type": "problem", 
+    "question": "請回答網頁中 Bonus II 關卡的問題：¿Quién es?", 
+    "answers": ["Saigyō", "西行", "西行法師", "佐藤義清"] 
+  }]
+}
