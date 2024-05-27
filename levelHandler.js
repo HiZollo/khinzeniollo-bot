@@ -24,10 +24,12 @@ module.exports = {
 
     await sleep(1000)
 
+    // 沒過關
     if (!passed) {
       return interaction.channel.send(`${interaction.user} 挑戰失敗`)
     }
 
+    // 標記過關和判斷首殺
     const firstBlood = !client.levelState[levelId]
     client.levelState[levelId] = true
 
@@ -51,8 +53,10 @@ module.exports = {
 async function levelStart(interaction, levelId, problems) {
   for await (const problem of problems) {
     if (problem.type === "problemset") {
+      // 打亂問題集
       const arr = structuredClone(problem.problems)
       shuffleArray(arr)
+      // 遞迴
       const passed = await levelStart(interaction, levelId, arr)
       if (!passed) return false
     }
@@ -76,6 +80,7 @@ async function challenge(interaction, question, answers) {
     max: 1
   })
   
+  // 超時
   if (!collected.size) {
     interaction.channel.send("已經超過一分鐘了，等你準備好再來找我好不好？我在此終止你的挑戰")
     return false
