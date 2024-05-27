@@ -10,7 +10,7 @@ module.exports = {
     const nextRefillTimestamp = client.energy.getNextRefillTimestamp()
 
     const nextRefillMessage = nextRefillTime
-      ? '\`' + `${~~(nextRefillTime / 60)}`.padStart(2, '0') + `:${nextRefillTime % 60}\``.padStart(2, '0')
+      ? '\`' + `${~~(nextRefillTime / 60)}`.padStart(2, '0') + ':' + `${nextRefillTime % 60}`.padStart(2, '0') + '\`'
       : '\`--:--\`'
 
     const embed = new EmbedBuilder()
