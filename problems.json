@@ -39,7 +39,20 @@
     "question": "國王答應要給 Zollus 獎賞時，Zollus 不悅並說了一句話，請問那句話引用自哪一本古羅馬書籍？",
     "answers": ["History of Rome (Livy)", "Ab Urbe Condita", "Ab urbe condita libri", "自建城以來"]
   }],
-  "3": [],
+  "3": [{
+    "type": "problem-multi",
+    "question": "請問歌聖將神器的碎片遺留在哪八個省份？",
+    "answers": [
+      ["gipuzkoa", "guipúzcoa", "guipuzcoa"], 
+      ["navarre", "navarra", "nafarroa"], 
+      ["castellón", "castelló", "castellon", "castello"], 
+      ["pontevedra"], 
+      ["burgos"], 
+      ["zamora"], 
+      ["albacete"], 
+      ["almería", "almeria"]
+    ]
+  }],
   "4": [],
   "5": [{
     "type": "problem",

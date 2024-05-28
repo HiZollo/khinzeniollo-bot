@@ -66,6 +66,11 @@ async function levelStart(interaction, levelId, problems) {
       const correct = await challenge(interaction, problem.question, problem.answers)
       if (!correct) return false
     }
+
+    if (problem.type === "problem-multi") {
+      const correct = await challengeMulti(interaction, problem.question, problem.answers)
+      if (!correct) return false
+    }
   }
 
   return true
@@ -92,6 +97,40 @@ async function challenge(interaction, question, answers) {
   const correct = answers.includes(message.content)
   await message.delete().catch(() => {})
 
+  if (!correct) {
+    interaction.channel.send("你的答案似乎是錯誤的，請再接再厲")
+    return false
+  }
+
+  return true
+}
+
+async function challengeMulti(interaction, question, answers) {
+  console.log(question, answers)
+  await interaction.channel.send(question)
+  const collected = await interaction.channel.awaitMessages({
+    filter: m => m.author.id === interaction.user.id,
+    time: 10e3,
+    max: 1
+  })
+  
+  // 超時
+  if (!collected.size) {
+    interaction.channel.send("已經超過一分鐘了，等你準備好再來找我好不好？我在此終止你的挑戰")
+    return false
+  }
+
+  const message = collected.first()
+
+  const responses = message.content.split(/\n+/)
+  await message.delete().catch(() => {})
+
+  if (responses.length !== answers.length) {
+    interaction.channel.send("你的答案似乎是錯誤的，請再接再厲")
+    return false
+  }
+
+  const correct = answers.every(ans => ans.some(a => responses.includes(a)))
   if (!correct) {
     interaction.channel.send("你的答案似乎是錯誤的，請再接再厲")
     return false
