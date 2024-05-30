@@ -14,6 +14,10 @@
       "type": "problem",
       "question": "文本提到 Zollus 出生的那天也是一位大人物的殞落，請問是誰？",
       "answers": ["Julius Caesar", "Gaius Julius Caesar"]
+    }, {
+      "type": "problem",
+      "question": "Zollus 被認為是哪個神的化身？",
+      "answers": ["Mars (mythology)", "Mars"]
     }]
   }, {
     "type": "problem",
@@ -31,13 +35,71 @@
       "answers": ["Lucius", "LVCIVS"]
     }]
   }, {
-    "type": "problem",
-    "question": "誰統治 Tenarius？",
-    "answers": ["Aurelius", "AVRELIVS"]
+    "type": "problemset",
+    "problems": [{
+      "type": "problem",
+      "question": "誰統治 Tenarius？",
+      "answers": ["Aurelius", "AVRELIVS"]
+    }, {
+      "type": "problem", 
+      "question": "Tenarius 的首都叫什麼名字？", 
+      "answers": ["ALMERIA", "Almeria"]
+    }]
   }, {
     "type": "problem",
     "question": "國王答應要給 Zollus 獎賞時，Zollus 不悅並說了一句話，請問那句話引用自哪一本古羅馬書籍？",
     "answers": ["History of Rome (Livy)", "Ab Urbe Condita", "Ab urbe condita libri", "自建城以來"]
+  }, {
+    "type": "problemset",
+    "problems": [{
+      "type": "problem",
+      "question": "Zollus 到的第一個城鎮叫什麼？",
+      "answers": ["AVANIVS", "Avanius"]
+    }, {
+      "type": "problem",
+      "question": "Zollus 遇到的第一個對手叫什麼？",
+      "answers": ["TITVS", "Titus"]
+    }]
+  }, {
+    "type": "problem",
+    "question": "Zollus 在第二個城市遭遇了人民軍，請問他們的領導者是誰？",
+    "answers": ["AEMILIA", "Aemilia"]
+  }, {
+    "type": "problem", 
+    "question": "Zollus 和 Aemilia 前往 Almeria 中，遇到了誰？",
+    "answers": ["MARCVS", "Marcus"]
+  }, {
+    "type": "problem",
+    "question": "誰處決了 Marcus？",
+    "answers": ["AEMILIA", "Aemilia"]
+  }, {
+    "type": "problem",
+    "question": "Zollus 和 Aurelius 的最終對決，誰最先攻擊到對方",
+    "answers": ["AVRELIVS", "Aurelius"]
+  }, {
+    "type": "problem",
+    "question": "誰獲得聖戰的最終勝利",
+    "answers": ["ZOLLVS", "Zollus"]
+  }, {
+    "type": "problem",
+    "question": "Aurelius 的遺言是？",
+    "answers": ["VICISTIZOLLESEDNONOMNIAETIAMMORSVICTOREMEST", "Vicisti, Zolle, sed non omnia; etiam mors victorem est."]
+  }, {
+    "type": "problem",
+    "question": "Aemilia 的遺言是？",
+    "answers": ["AVEIMPERATORMORITVRATESALUTAT", "Ave imperator, moritura te salutat."]
+  }, {
+    "type": "problem", 
+    "question": "Zollus 對 Aemilia 遺言的回應是？",
+    "answers": ["IMPERATORNONMEESTMORITVRANONTEEST", "Imperator non me est, moritura non te est."]
+  }, {
+    "type": "problem", 
+    "question": "Aemilia 是哪個神的化身？",
+    "answers": ["Diana (mythology)", "Diana"]
+  }, {
+    "type": "problem",
+    "question": "Zollus 帶著榮耀回到 Ignatia，又獨自默默離開。傳說中他到了哪裡？",
+    "answers": ["ALMERIA", "Almeria"]
   }],
   "3": [{
     "type": "problem",
