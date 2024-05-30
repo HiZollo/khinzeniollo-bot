@@ -13,6 +13,8 @@ module.exports = {
       ? '\`' + `${~~(nextRefillTime / 60)}`.padStart(2, '0') + ':' + `${nextRefillTime % 60}`.padStart(2, '0') + '\`'
       : '\`--:--\`'
 
+    const endTime = client.cooldowns.checkUser(interaction.user.id)
+
     const embed = new EmbedBuilder()
       .setColor(0xc0c0c0)
       .setTitle('活動狀態')
@@ -21,6 +23,9 @@ module.exports = {
     embed.setFields({
       name: '破關狀態', 
       value: Object.entries(client.levelState).map(obj => `\`${levelName[obj[0]].padEnd(8, ' ')}\`: ${obj[1] ? ':white_check_mark:' : ':x:'}`).join('\n')
+    }, {
+      name: '個人狀態',
+      value: `冷卻中：${endTime > 0 ? `直到 <t:${~~((Date.now() + endTime)/1000)}:T>` : '否'}`
     })
 
     await interaction.reply({ embeds: [embed] })
