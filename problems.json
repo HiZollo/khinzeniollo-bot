@@ -61,12 +61,12 @@
   }],
   "E1": [{
     "type": "problem", 
-    "question": "請回答網頁中 Bonus I 關卡的問題：¿Cuál es?", 
+    "question": "請回答網頁中 Extra I 關卡的問題：¿Cuál es?", 
     "answers": ["quinquenio"] 
   }],
   "E2": [{ 
     "type": "problem", 
-    "question": "請回答網頁中 Bonus II 關卡的問題：¿Quién es?", 
+    "question": "請回答網頁中 Extra II 關卡的問題：¿Quién es?", 
     "answers": ["Saigyō", "西行", "西行法師", "佐藤義清"] 
   }]
 }
