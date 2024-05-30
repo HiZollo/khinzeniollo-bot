@@ -78,6 +78,10 @@ client.on('interactionCreate', async interaction => {
   if (interaction.isChatInputCommand()) ChatInputCommandInterationHandler(interaction)
 })
 
+client.on('error', console.error)
+process.on('uncaughtException', console.error)
+process.on('unhandledRejection', console.error)
+
 // Login
 client.login(process.env.TOKEN)
 
