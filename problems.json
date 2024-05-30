@@ -1,5 +1,13 @@
 {
-  "1": [],
+  "1": [{
+    "type": "problem", 
+    "question": "請問禮物是什麼？", 
+    "answers": ["HYIv3mQaWXvrWboZ"]
+  }, {
+    "type": "problem", 
+    "question": "請問另外一個物品的主人是誰？", 
+    "answers": ["Rick Astley", "Richard Paul Astley"]
+  }],
   "2": [{
     "type": "problem",
     "question": "誰是這篇故事的主角，貫穿頭尾？",
