@@ -8,7 +8,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBit
 client.hook = new WebhookClient({ id: '1244012602514739210', token: 'bNGUJi0d0g4w-YMvtov85R1FuFcYXrqOTczuxqS3upMALwsz7_SV2INr57amWyI1Cyi7'})
 client.commands = new Collection()
 client.energy = require('./energyManager.js')
-client.cooldowns = new Collection()
+client.cooldowns = require('./cooldownManager.js')
 client.levelState = {
   '1': false,
   '2': false,

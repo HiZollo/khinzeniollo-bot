@@ -6,14 +6,25 @@ module.exports = {
   async execute(interaction, client) {
     const levelId = interaction.customId.slice(6) // level_
 
+    // Check Cooldown
+    const endTime = client.cooldowns.checkUser(interaction.user.id)
+    if (endTime > 0) {
+      return interaction.reply({
+        content: `噢不，你還在冷卻期間，所以無法挑戰\n請稍候 ${msToText(endTime)}後再重新開啟你的挑戰`,
+        ephemeral: true
+      })
+    }
+
+    // Check Energy
     if (!client.energy.useEnergy()) {
       return interaction.reply({
-        content: "噢不，你沒有體力了，所以無法挑戰。\n你可以使用 /stats 指令查看下次回復是什麼時候",
+        content: "噢不，你沒有體力了，所以無法挑戰\n你可以使用 /stats 指令查看下次回復是什麼時候",
         ephemeral: true 
       })
     }
     
     await interaction.deferUpdate()
+    client.cooldowns.addUser(interaction.user.id)
 
     await interaction.channel.send(`${interaction.user}，聽說你要挑戰${levelTranslate.zh[levelId]}，祝你好運`)
     
@@ -144,6 +155,15 @@ function shuffleArray(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
+}
+
+function msToText(ms) {
+  const a = ~~(ms/1000)
+  const min = ~~(a/60)
+  const s = a % 60
+
+  if (min > 0) return `${min} 分 ${s} 秒`
+  return `${s} 秒`
 }
 
 const levelTranslate = {
