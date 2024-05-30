@@ -44,20 +44,20 @@
     "type": "problem-multi",
     "question": "請問歌聖將神器的碎片遺留在哪八個省份？",
     "answers": [
-      ["Gipuzkoa", "Guipúzcoa", "Guipuzcoa"], 
-      ["Navarre", "Navarra", "Nafarroa"], 
-      ["Castellón", "castelló", "castellon", "castello"], 
-      ["Pontevedra"], 
-      ["Burgos"], 
-      ["Zamora"], 
-      ["Albacete"], 
-      ["Almería", "Almeria"]
+      ["Province of Gipuzkoa", "Gipuzkoa", "Guipúzcoa", "Guipuzcoa"], 
+      ["Province of Navarre", "Navarre", "Navarra", "Nafarroa"], 
+      ["Province of Castellón", "Castellón", "Castelló", "Castellon", "Castello"], 
+      ["Province of Pontevedra", "Pontevedra"], 
+      ["Province of Burgos", "Burgos"], 
+      ["Province of Zamora", "Zamora"], 
+      ["Province of Albacete", "Albacete"], 
+      ["Province of Almería", "Almería", "Almeria"]
     ]
   }],
   "5": [{
     "type": "problem",
     "question": "請問 n 是多少？",
-    "answers": ["973669971969907139985091523"]
+    "answers": ["973669971969907139985091523", "973669977864119366408742949"]
   }],
   "E1": [{
     "type": "problem", 
