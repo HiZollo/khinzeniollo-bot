@@ -1,4 +1,4 @@
-const { Client, Collection, GatewayIntentBits, WebhookClient } = require('discord.js')
+const { Client, Collection, EmbedBuilder, GatewayIntentBits, WebhookClient } = require('discord.js')
 require('dotenv').config()
 const fs = require('node:fs')
 const levelHandler = require('./levelHandler.js')
@@ -17,6 +17,12 @@ client.levelState = {
   '5': false,
   'E1': false,
   'E2': false,
+}
+client.makeLog = function (description, color = 0xc0c0c0, link = null) {
+  return new EmbedBuilder()
+    .setColor(color)
+    .setAuthor({ iconURL: this.user.displayAvatarURL(), name: `Khinzeniollog - ${Date.now()}`, url: link })
+    .setDescription(description)
 }
 
 // Load Commands
@@ -60,6 +66,11 @@ function ChatInputCommandInterationHandler(interaction) {
   }
 
   command.execute(interaction, client).catch(console.err)
+  client.hook.send({
+    embeds: [
+      client.makeLog(`${interaction.user} 使用 ${command.name} 指令`)
+    ]
+  })
 }
 
 client.on('interactionCreate', async interaction => {

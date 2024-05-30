@@ -23,13 +23,20 @@ module.exports = {
       })
     }
     
+    // Prepare
     await interaction.deferUpdate()
     client.cooldowns.addUser(interaction.user.id)
+
+    // Log
+    const logMessage = await client.hook.send({
+      embeds: [client.makeLog(`${interaction.user} 開始挑戰${levelTranslate.zh[levelId]}`, 0x4A4EDC)]
+    })
 
     await interaction.channel.send(`${interaction.user}，聽說你要挑戰${levelTranslate.zh[levelId]}，祝你好運`)
     
     await sleep(1000)
 
+    // Start
     await interaction.channel.send(`# ${levelTranslate.es[levelId]}. ${levelTranslate.name[levelId]}`)
 
     const passed = await levelStart(interaction, levelId, problems[levelId])
@@ -38,6 +45,9 @@ module.exports = {
 
     // 沒過關
     if (!passed) {
+      await client.hook.send({
+        embeds: [client.makeLog(`${interaction.user} 挑戰${levelTranslate.zh[levelId]}失敗`, 0xE93A3A, makeLogMessageURL(logMessage))]
+      })
       return interaction.channel.send(`${interaction.user} 挑戰失敗`)
     }
 
@@ -47,6 +57,10 @@ module.exports = {
 
     // 是首殺
     if (firstBlood) {
+      await client.hook.send({
+        embeds: [client.makeLog(`${interaction.user} 成功首殺${levelTranslate.zh[levelId]}`, 0x00BF4C, makeLogMessageURL(logMessage))]
+      })
+
       await interaction.channel.send(`真是不敢相信，${interaction.user} 成功通過${levelTranslate.zh[levelId]}！`)
       await interaction.channel.send(`而且還是${levelTranslate.zh[levelId]}的首殺！趕快通知 <@&823241953012350977> 這項訊息來獲得你的豐厚獎勵！`)
 
@@ -58,6 +72,9 @@ module.exports = {
 
     // 不是首殺
     await interaction.channel.send(`${interaction.user} 通過了 ${levelTranslate.zh[levelId]}，不過這關其實已經被解開過了，所以他算不算是浪費了一點體力 :thinking:`)
+    await client.hook.send({
+      embeds: [client.makeLog(`${interaction.user} 再次通過${levelTranslate.zh[levelId]}`, 0xF2D049, makeLogMessageURL(logMessage))]
+    })
 
   }
 }
@@ -164,6 +181,10 @@ function msToText(ms) {
 
   if (min > 0) return `${min} 分 ${s} 秒`
   return `${s} 秒`
+}
+
+function makeLogMessageURL({ channel_id, id }) {
+  return `https://discord.com/channels/572733182412193792/${channel_id}/${id}`
 }
 
 const levelTranslate = {

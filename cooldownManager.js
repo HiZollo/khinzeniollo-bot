@@ -1,6 +1,6 @@
 module.exports = {
   data: new Map(),
-  defaultCooldown: 5 * 60,
+  defaultCooldown: 300,
 
   addUser(userId, duration = this.defaultCooldown) {
     if (duration === 0) return
