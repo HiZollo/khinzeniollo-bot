@@ -66,7 +66,18 @@ module.exports = {
 
       await sleep(500)
       interaction.client.energy.refillMaxEnergy()
-      await interaction.channel.send('為了獎勵你們的努力，你們的體力已經被全部回滿')
+      interaction.client.cooldowns.amnesty()
+      await interaction.channel.send('為了獎勵你們的努力，你們的體力已經被全部回滿，且所有人的冷卻時間通通重置')
+      
+      const main_all_pass = client.levelState['1'] && client.levelState['2'] && client.levelState['3'] && client.levelState['4'] && client.levelState['5']
+      const all_pass = main_all_pass && client.levelState['E1'] && client.levelState['E2']
+
+      if (all_pass) {
+        await interaction.channel.send(`活動的七關已被全數攻略，HiZollo 五週年活動在此結束\n現在時間：<t:${~~(Date.now() / 1000)}:f>`)
+      } else if (main_all_pass && levelId !== 'E1' && levelId !== 'E2') {
+        await interaction.channel.send(`活動的五個主要關卡已被全數攻略，將會發放 HiZollo 五週年全破獎勵\n現在時間：<t:${~~(Date.now() / 1000)}:f>，活動結束前可繼續挑戰獎勵關卡`)
+      }
+      
       return
     }
 

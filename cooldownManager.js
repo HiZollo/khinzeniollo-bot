@@ -18,5 +18,9 @@ module.exports = {
     const now = Date.now()
     const endTime = this.data.get(userId);
     return endTime && endTime > now ? endTime - now : 0;
+  }, 
+
+  amnesty() {
+    this.data.clear()
   }
 }

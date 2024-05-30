@@ -2,10 +2,9 @@ module.exports = {
   name: 'ping',
   description: 'Ping!',
   async execute(interaction, client) {
-    if (client.energy.useEnergy()) {
-      await interaction.reply(`Pong! Energy remaining: ${client.energy.getEnergy()}/${client.energy.maxEnergy}`)
-    } else {
-      await interaction.reply('No energy left. Please wait for it to refill.')
-    }
+    await interaction.deferReply()
+    const message = await interaction.editReply('計算中……')
+    const ping = message.createdTimestamp - interaction.createdTimestamp
+    await message.edit(`:information_source:｜Pong！機器人延遲為：${ping}ms，API 延遲為：${client.ws.ping}ms`)
   }
 }

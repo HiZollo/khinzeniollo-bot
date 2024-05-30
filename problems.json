@@ -95,7 +95,7 @@
   }, {
     "type": "problem",
     "question": "Aemilia 的遺言是？",
-    "answers": ["AVEIMPERATORMORITVRATESALUTAT", "Ave imperator, moritura te salutat."]
+    "answers": ["AVEIMPERATORMORITVRATESALVTAT", "Ave imperator, moritura te salutat."]
   }, {
     "type": "problem", 
     "question": "Zollus 對 Aemilia 遺言的回應是？",
