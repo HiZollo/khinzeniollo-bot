@@ -1,7 +1,7 @@
 module.exports = {
   energy: 10,
   maxEnergy: 10,
-  refillInterval: 5 * 60e3,
+  refillInterval: 60 * 60e3,
   refillTimeout: null,
   nextRefillTimestamp: null,
 
