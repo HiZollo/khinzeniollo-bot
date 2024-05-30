@@ -7,7 +7,7 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor(0xc0c0c0)
       .setTitle('選擇關卡')
-      .setDescription('請選擇關卡進行挑戰\n\n挑戰之前，建議使用 /info 指令了解答題注意事項，以免你找出了正確的答案卻被判錯\n\n當你開始挑戰後，體力將會被消耗一點\n\n**爾等按鈕者，當棄一切希望。**')
+      .setDescription('請選擇關卡進行挑戰\n\n挑戰之前，建議使用 </info:1245858480804593744> 指令了解答題注意事項，以免你找出了正確的答案卻被判錯\n\n當你開始挑戰後，體力將會被消耗一點\n\n**爾等按鈕者，當棄一切希望。**')
 
     const levels = new ActionRowBuilder()
       .addComponents(

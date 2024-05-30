@@ -18,7 +18,7 @@ module.exports = {
     // Check Energy
     if (!client.energy.useEnergy()) {
       return interaction.reply({
-        content: "噢不，你沒有體力了，所以無法挑戰\n你可以使用 /stats 指令查看下次回復是什麼時候",
+        content: "噢不，你沒有體力了，所以無法挑戰\n你可以使用 </stats:1245858480804593747> 指令查看下次回復是什麼時候",
         ephemeral: true 
       })
     }
