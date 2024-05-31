@@ -38,6 +38,6 @@ const levelName = {
   '3': 'Tres',
   '4': 'Cuatro',
   '5': 'Cinco',
-  'E1': 'Bonus I',
-  'E2': 'Bonus II'
+  'E1': 'Extra I',
+  'E2': 'Extra II'
 }
