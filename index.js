@@ -5,7 +5,7 @@ const levelHandler = require('./levelHandler.js')
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] })
 
-client.hook = new WebhookClient({ id: '1244012602514739210', token: 'bNGUJi0d0g4w-YMvtov85R1FuFcYXrqOTczuxqS3upMALwsz7_SV2INr57amWyI1Cyi7'})
+client.hook = new WebhookClient({ id: process.env.WEBHOOK_ID, token: process.env.WEBHOOK_TOKEN })
 client.commands = new Collection()
 client.energy = require('./energyManager.js')
 client.cooldowns = require('./cooldownManager.js')
