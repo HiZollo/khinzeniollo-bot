@@ -121,7 +121,7 @@ async function challenge(interaction, question, answers) {
   await interaction.channel.send(question)
   const collected = await interaction.channel.awaitMessages({
     filter: m => m.author.id === interaction.user.id,
-    time: 10e3,
+    time: 60e3,
     max: 1
   })
   
@@ -149,7 +149,7 @@ async function challengeMulti(interaction, question, answers) {
   await interaction.channel.send(question)
   const collected = await interaction.channel.awaitMessages({
     filter: m => m.author.id === interaction.user.id,
-    time: 10e3,
+    time: 60e3,
     max: 1
   })
   
