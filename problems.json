@@ -66,10 +66,6 @@
     "question": "Zollus 在殺了 Titus 後說了什麼？",
     "answers": ["STVLTVS", "Stultus"]
   }, {
-    "type": "problem",
-    "question": "Zollus 在第二個城市遭遇了人民軍，請問他在一開始對他們說了什麼？",
-    "answers": ["MELIORTIBIEXIREQVISQVISES", "Melior tibi exire, quisquis es."]
-  }, {
     "type": "problemset",
     "problems": [{
       "type": "problem",
