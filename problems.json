@@ -67,7 +67,7 @@
     "answers": ["STVLTVS", "Stultus"]
   }, {
     "type": "problem",
-    "question": "Zollus 在第二個城市遭遇了人民軍，請問他在一開始對他們說了什麼？"
+    "question": "Zollus 在第二個城市遭遇了人民軍，請問他在一開始對他們說了什麼？",
     "answers": ["MELIORTIBIEXIREQVISQVISES", "Melior tibi exire, quisquis es."]
   }, {
     "type": "problemset",
@@ -77,7 +77,7 @@
       "answers": ["AEMILIA", "Aemilia"]
     }, {
       "type": "problem",
-      "question": "在 Zollus 的口中，Aurelius 是誰",
+      "question": "在 Zollus 的口中，Aurelius 是誰？",
       "answers": ["SATANAS", "Satanas", "Satan"]
     }]
   }, {
@@ -94,7 +94,7 @@
     "answers": ["AVRELIVSNOCTVRNVS", "AVRELIVS", "Aurelius", "Aurelius Nocturnus"]
   }, {
     "type": "problem",
-    "question": "誰獲得聖戰的最終勝利",
+    "question": "誰獲得聖戰的最終勝利？",
     "answers": ["ZOLLVS", "Zollus"]
   }, {
     "type": "problem",
