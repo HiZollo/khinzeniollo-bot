@@ -15,8 +15,8 @@ module.exports = {
     }
   },
 
-  startRefillTimer() {
-    this.nextRefillTimestamp = Date.now() + this.refillInterval
+  startRefillTimer(nexttime = null) {
+    this.nextRefillTimestamp = nexttime ?? Date.now() + this.refillInterval
     this.refillTimeout = setTimeout(() => {
       if (this.energy < this.maxEnergy) {
         this.energy += 1
