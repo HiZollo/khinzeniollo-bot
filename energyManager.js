@@ -11,7 +11,7 @@ module.exports = {
       this.nextRefillTime = Date.now() + initialCountdown;
       this.startRefillTimer(initialCountdown);
     } else if (this.energy < this.maxEnergy) {
-      this.startRefillTimer(this.refillInterval);
+      this.startRefillTimer();
     }
   },
 
