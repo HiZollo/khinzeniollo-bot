@@ -32,16 +32,9 @@
     "question": "Zollus 所在國家的名稱是？",
     "answers": ["Ignatia", "IGNATIA"]
   }, {
-    "type": "problemset",
-    "problems": [{
-      "type": "problem",
-      "question": "另外一個國家的名稱是什麼？",
-      "answers": ["Tenarius", "TENARIVS"]
-    }, {
-      "type": "problem",
-      "question": "誰統治 Ignatia？",
-      "answers": ["Lucius", "LVCIVS"]
-    }]
+    "type": "problem",
+    "question": "另外一個國家的名稱是什麼？",
+    "answers": ["Tenarius", "TENARIVS"]
   }, {
     "type": "problemset",
     "problems": [{
@@ -70,8 +63,23 @@
     }]
   }, {
     "type": "problem",
-    "question": "Zollus 在第二個城市遭遇了人民軍，請問他們的領導者是誰？",
-    "answers": ["AEMILIA", "Aemilia"]
+    "question": "Zollus 在殺了 Titus 後說了什麼？",
+    "answers": ["STVLTVS", "Stultus"]
+  }, {
+    "type": "problem",
+    "question": "Zollus 在第二個城市遭遇了人民軍，請問他在一開始對他們說了什麼？"
+    "answers": ["MELIORTIBIEXIREQVISQVISES", "Melior tibi exire, quisquis es."]
+  }, {
+    "type": "problemset",
+    "problems": [{
+      "type": "problem",
+      "question": "請問人民軍的領導者是誰？",
+      "answers": ["AEMILIA", "Aemilia"]
+    }, {
+      "type": "problem",
+      "question": "在 Zollus 的口中，Aurelius 是誰",
+      "answers": ["SATANAS", "Satanas", "Satan"]
+    }]
   }, {
     "type": "problem", 
     "question": "Zollus 和 Aemilia 前往 Almeria 中，遇到了誰？",
@@ -83,7 +91,7 @@
   }, {
     "type": "problem",
     "question": "Zollus 和 Aurelius 的最終對決，誰最先攻擊到對方",
-    "answers": ["AVRELIVS", "Aurelius"]
+    "answers": ["AVRELIVSNOCTVRNVS", "AVRELIVS", "Aurelius", "Aurelius Nocturnus"]
   }, {
     "type": "problem",
     "question": "誰獲得聖戰的最終勝利",
@@ -100,14 +108,6 @@
     "type": "problem", 
     "question": "Zollus 對 Aemilia 遺言的回應是？",
     "answers": ["IMPERATORNONMEESTMORITVRANONTEEST", "Imperator non me est, moritura non te est."]
-  }, {
-    "type": "problem", 
-    "question": "Aemilia 是哪個神的化身？",
-    "answers": ["Diana (mythology)", "Diana"]
-  }, {
-    "type": "problem",
-    "question": "Zollus 帶著榮耀回到 Ignatia，又獨自默默離開。傳說中他到了哪裡？",
-    "answers": ["ALMERIA", "Almeria"]
   }],
   "3": [{
     "type": "problem",
