@@ -46,8 +46,8 @@
     "type": "problemset",
     "problems": [{
       "type": "problem",
-      "question": "誰統治 Tenarius？",
-      "answers": ["Aurelius", "AVRELIVS"]
+      "question": "Tenarius 統治者的全名是？",
+      "answers": ["Aurelius Nocturnus", "AVRELIVSNOCTVRNVS"]
     }, {
       "type": "problem", 
       "question": "Tenarius 的首都叫什麼名字？", 
