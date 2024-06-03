@@ -25,7 +25,7 @@
     }, {
       "type": "problem",
       "question": "Zollus 被認為是哪個神的化身？",
-      "answers": ["Mars (mythology)", "Mars"]
+      "answers": ["Mars (mythology)", "Mars", "MARS"]
     }]
   }, {
     "type": "problem",
