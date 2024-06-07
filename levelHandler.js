@@ -137,7 +137,7 @@ async function challenge(interaction, question, answers) {
   await message.delete().catch(() => {})
 
   if (!correct) {
-    interaction.channel.send("你的答案似乎是錯誤的，請再接再厲")
+    interaction.channel.send(`${message.content} 似乎是錯誤的答案，請再接再厲`)
     return false
   }
 

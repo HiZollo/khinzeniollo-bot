@@ -3,7 +3,10 @@ require('dotenv').config()
 const fs = require('node:fs')
 const levelHandler = require('./levelHandler.js')
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] })
+const client = new Client({ 
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
+  allowedMentions: { parse: [] }
+})
 
 client.hook = new WebhookClient({ id: process.env.WEBHOOK_ID, token: process.env.WEBHOOK_TOKEN })
 client.commands = new Collection()
