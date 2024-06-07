@@ -11,66 +11,66 @@
   "2": [{
     "type": "problem",
     "question": "誰是這篇故事的主角，貫穿頭尾？",
-    "answers": ["ZOLLVS", "Zollus"]
+    "answers": ["ZOLLVS"]
   }, {
     "type": "problemset",
     "problems": [{
       "type": "problem",
       "question": "Zollus 在哪一天（幾月幾日）出生？",
-      "answers": ["03/15", "3/15", "IDVSMARTIAE"]
+      "answers": ["03/15", "IDVSMARTIAE"]
     }, {
       "type": "problem",
       "question": "文本提到 Zollus 出生的那天也是一位大人物的殞落，請問是誰？",
-      "answers": ["Julius Caesar", "Gaius Julius Caesar"]
+      "answers": ["Julius Caesar"]
     }, {
       "type": "problem",
       "question": "Zollus 被認為是哪個神的化身？",
-      "answers": ["Mars (mythology)", "Mars", "MARS"]
+      "answers": ["Mars (mythology)"]
     }]
   }, {
     "type": "problem",
     "question": "Zollus 所在國家的名稱是？",
-    "answers": ["Ignatia", "IGNATIA"]
+    "answers": ["IGNATIA"]
   }, {
     "type": "problem",
     "question": "另外一個國家的名稱是什麼？",
-    "answers": ["Tenarius", "TENARIVS"]
+    "answers": ["TENARIVS"]
   }, {
     "type": "problemset",
     "problems": [{
       "type": "problem",
       "question": "Tenarius 統治者的全名是？",
-      "answers": ["Aurelius Nocturnus", "AVRELIVSNOCTVRNVS"]
+      "answers": ["AVRELIVSNOCTVRNVS"]
     }, {
       "type": "problem", 
       "question": "Tenarius 的首都叫什麼名字？", 
-      "answers": ["ALMERIA", "Almeria"]
+      "answers": ["ALMERIA"]
     }]
   }, {
     "type": "problem",
     "question": "國王答應要給 Zollus 獎賞時，Zollus 不悅並說了一句話，請問那句話引用自哪一本古羅馬書籍？",
-    "answers": ["History of Rome (Livy)", "Ab Urbe Condita", "Ab urbe condita libri", "自建城以來"]
+    "answers": ["History of Rome (Livy)"]
   }, {
     "type": "problemset",
     "problems": [{
       "type": "problem",
       "question": "Zollus 到的第一個城鎮叫什麼？",
-      "answers": ["AVANIVS", "Avanius"]
+      "answers": ["AVANIVS"]
     }, {
       "type": "problem",
       "question": "Zollus 遇到的第一個對手叫什麼？",
-      "answers": ["TITVS", "Titus"]
+      "answers": ["TITVS"]
     }]
   }, {
     "type": "problem",
     "question": "Zollus 在殺了 Titus 後說了什麼？",
-    "answers": ["STVLTVS", "Stultus"]
+    "answers": ["STVLTVS"]
   }, {
     "type": "problemset",
     "problems": [{
       "type": "problem",
       "question": "請問人民軍的領導者是誰？",
-      "answers": ["AEMILIA", "Aemilia"]
+      "answers": ["AEMILIA"]
     }, {
       "type": "problem",
       "question": "在 Zollus 的口中，Aurelius 是誰？",
@@ -79,31 +79,31 @@
   }, {
     "type": "problem", 
     "question": "Zollus 和 Aemilia 前往 Almeria 中，遇到了誰？",
-    "answers": ["MARCVS", "Marcus"]
+    "answers": ["MARCVS"]
   }, {
     "type": "problem",
     "question": "誰處決了 Marcus？",
-    "answers": ["AEMILIA", "Aemilia"]
+    "answers": ["AEMILIA"]
   }, {
     "type": "problem",
     "question": "Zollus 和 Aurelius 的最終對決，誰最先攻擊到對方",
-    "answers": ["AVRELIVSNOCTVRNVS", "AVRELIVS", "Aurelius", "Aurelius Nocturnus"]
+    "answers": ["AVRELIVSNOCTVRNVS", "AVRELIVS"]
   }, {
     "type": "problem",
     "question": "誰獲得聖戰的最終勝利？",
-    "answers": ["ZOLLVS", "Zollus"]
+    "answers": ["ZOLLVS"]
   }, {
     "type": "problem",
     "question": "Aurelius 的遺言是？",
-    "answers": ["VICISTIZOLLESEDNONOMNIAETIAMMORSVICTOREMEST", "Vicisti, Zolle, sed non omnia; etiam mors victorem est."]
+    "answers": ["VICISTIZOLLESEDNONOMNIAETIAMMORSVICTOREMEST"]
   }, {
     "type": "problem",
     "question": "Aemilia 的遺言是？",
-    "answers": ["AVEIMPERATORMORITVRATESALVTAT", "Ave imperator, moritura te salutat."]
+    "answers": ["AVEIMPERATORMORITVRATESALVTAT"]
   }, {
     "type": "problem", 
     "question": "Zollus 對 Aemilia 遺言的回應是？",
-    "answers": ["IMPERATORNONMEESTMORITVRANONTEEST", "Imperator non me est, moritura non te est."]
+    "answers": ["IMPERATORNONMEESTMORITVRANONTEEST"]
   }],
   "3": [{
     "type": "problem",
@@ -137,6 +137,6 @@
   "E2": [{ 
     "type": "problem", 
     "question": "請回答網頁中 Extra II 關卡的問題：¿Quién es?", 
-    "answers": ["Saigyō", "西行", "西行法師", "佐藤義清"] 
+    "answers": ["Saigyō"] 
   }]
 }
