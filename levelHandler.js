@@ -62,7 +62,10 @@ module.exports = {
       })
 
       await interaction.channel.send(`真是不敢相信，${interaction.user} 成功通過${levelTranslate.zh[levelId]}！`)
-      await interaction.channel.send(`而且還是${levelTranslate.zh[levelId]}的首殺！趕快通知 <@&823241953012350977> 這項訊息來獲得你的豐厚獎勵！`)
+      await interaction.channel.send({ 
+        content: `而且還是${levelTranslate.zh[levelId]}的首殺！趕快通知 <@&823241953012350977> 這項訊息來獲得你的豐厚獎勵！`,
+        allowedMentions: { parse: ['roles'] }
+      })
 
       await sleep(500)
       interaction.client.energy.refillMaxEnergy()
