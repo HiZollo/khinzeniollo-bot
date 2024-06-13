@@ -34,7 +34,7 @@
   }, {
     "type": "problem",
     "question": "另外一個國家的名稱是什麼？",
-    "answers": ["TENARIVS"]
+    "answers": ["TENARIVS", "Tenarius"]
   }, {
     "type": "problemset",
     "problems": [{

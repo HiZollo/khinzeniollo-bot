@@ -8,7 +8,6 @@ module.exports = {
   initialize(initialEnergy = this.maxEnergy, initialCountdown = null) {
     this.energy = initialEnergy;
     if (initialCountdown !== null) {
-      this.nextRefillTime = Date.now() + initialCountdown;
       this.startRefillTimer(initialCountdown);
     } else if (this.energy < this.maxEnergy) {
       this.startRefillTimer();
