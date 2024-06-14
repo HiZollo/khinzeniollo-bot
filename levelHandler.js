@@ -137,7 +137,7 @@ async function challenge(interaction, question, answers) {
   const message = collected.first()
 
   const correct = answers.includes(message.content)
-  await message.delete().catch(() => {})
+  // await message.delete().catch(() => {})
 
   if (!correct) {
     interaction.channel.send(`${message.content} 似乎是錯誤的答案，請再接再厲`)
@@ -165,7 +165,7 @@ async function challengeMulti(interaction, question, answers) {
   const message = collected.first()
 
   const responses = message.content.split(/\n+/)
-  await message.delete().catch(() => {})
+  // await message.delete().catch(() => {})
 
   if (responses.length !== answers.length) {
     interaction.channel.send(`${responses.join('、')} 似乎是錯誤的答案，請再接再厲`)
