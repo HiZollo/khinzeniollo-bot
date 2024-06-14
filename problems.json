@@ -55,7 +55,7 @@
     "problems": [{
       "type": "problem",
       "question": "Zollus 到的第一個城鎮叫什麼？",
-      "answers": ["AVANIVS"]
+      "answers": ["AVANIVS", "AVANIVM"]
     }, {
       "type": "problem",
       "question": "Zollus 遇到的第一個對手叫什麼？",
