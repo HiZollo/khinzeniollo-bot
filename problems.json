@@ -74,7 +74,7 @@
     }, {
       "type": "problem",
       "question": "在 Zollus 的口中，Aurelius 是誰？",
-      "answers": ["SATANAS", "Satanas", "Satan"]
+      "answers": ["SATANAS"]
     }]
   }, {
     "type": "problem", 
