@@ -101,9 +101,21 @@
     "question": "Aemilia 的遺言是？",
     "answers": ["AVEIMPERATORMORITVRATESALVTAT"]
   }, {
+    "type": "problem",
+    "question": "Aemilia 的遺言引用並改寫自哪本古羅馬書籍？",
+    "answers": ["The Twelve Caesars"]
+  }, {
     "type": "problem", 
     "question": "Zollus 對 Aemilia 遺言的回應是？",
     "answers": ["IMPERATORNONMEESTMORITVRANONTEEST"]
+  }, {
+    "type": "problem",
+    "question": "Zollus 對 Aemilia 遺言的回應句，事實上是誰撰寫的？",
+    "answers": ["ac0xrpfs001", "AC0xRPFS001"]
+  }, {
+    "type": "problem",
+    "question": "請推測石板出土於哪個省份？",
+    "answers": ["Province of Almería"]
   }],
   "3": [{
     "type": "problem",
